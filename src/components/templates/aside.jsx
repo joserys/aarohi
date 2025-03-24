@@ -1,9 +1,11 @@
+import Image from "../modules/image";
 import Text from "../modules/text";
-import Url from "../builds/url";
+import Url from "../modules/url";
 
 const Aside = () => {
 	return (
 		<aside className="aside background-3">
+			<Image src="src/assets/imgs/pfp.png" alt="picture of Aarohi Srivastava" />
 			<Text type="heading">Aarohi Srivastava</Text>
             <Text type="sub-heading">Ph.D student in Computer Sciences</Text>
 			<Url icon="fa-solid fa-location-dot" link="https://www.nd.edu/" external={true}>University of Notre Dame</Url>

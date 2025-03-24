@@ -1,6 +1,9 @@
+@use './coloring';
+@forward './coloring';
+
 body {
     font-size: 16px;
-    color: $neutral-1;
+    color: coloring.$neutral-1;
 }
 
 .title {
@@ -19,4 +22,5 @@ body {
 
 .sub-heading {
     font-style: italic;
+    padding-bottom: 10px;
 }

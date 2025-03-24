@@ -1,17 +1,1 @@
-/* Error: Undefined variable.
- *   ,
- * 3 |     color: $neutral-1;
- *   |            ^^^^^^^^^^
- *   '
- *   src/scss/text.scss 3:12  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 3 \2502      color: $neutral-1;\a   \2502             ^^^^^^^^^^\a   \2575 \a   src/scss/text.scss 3:12  root stylesheet";
-}
+.background-1{background-color:#123456}.background-2{background-color:#7890ab}.background-3{background-color:#cde}.border-1{border-color:#123456}.border-2{border-color:#7890ab}.border-3{border-color:#cde}body{font-size:16px;color:#fff}.title{font-size:1.5em;font-weight:bold}.sub-title{font-size:1.2em;font-style:italic}.heading{font-weight:bold}.sub-heading{font-style:italic;padding-bottom:10px}
