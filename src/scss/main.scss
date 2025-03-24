@@ -2,26 +2,46 @@
 @use "layout";
 
 .link {
-    display: flex;
-    padding: 10px;
-    border-top: 2px layout.$neutral-2 solid;
+	display: flex;
+	padding: 10px;
+	border-top: 2px layout.$neutral-2 solid;
 }
 
 .img-container {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
 }
 
 .image {
-    max-width: 200px;
-    max-height: 200px;
-    width: 100%;
-    height: auto;
-    border: 2px layout.$neutral-2 solid;
-    border-radius: 50%;
-    margin: 0 auto;
-    display: block;
-    float: none;
+	max-width: 200px;
+	max-height: 200px;
+	width: 100%;
+	height: auto;
+	border: 2px layout.$neutral-2 solid;
+	border-radius: 50%;
+	margin: 0 auto;
+	display: block;
+	float: none;
+}
+.large-nav {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-button {
+	padding: 10px;
+	margin: 10px;
+	background-color: layout.$clr-1;
+	border: 2px layout.$clr-3 solid;
+	border-radius: 40% 3px;
+	box-shadow: 4px 4px 1px 1px layout.$neutral-2;
+	height: 75%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

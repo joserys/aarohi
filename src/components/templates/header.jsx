@@ -1,11 +1,11 @@
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import NavButton from '../modules/navButton';
 
 const Header = () => {
 	return (
 		<header className='header background-2'>
-			<nav>
-				<div><Link to="/">About Me</Link></div>
-				<div><Link to="/Experience">Experience</Link></div>
+			<nav className='large-nav'>
+				<NavButton title="About Me" url="/"></NavButton>
+				<NavButton title="Experience" url="/Experience"></NavButton>
 			</nav>
 		</header>
 	);
