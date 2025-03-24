@@ -1,0 +1,29 @@
+$clr-1: #123456;
+$clr-2: #7890AB;
+$clr-3: #CDEF;
+$neutral-1: #ffffff;
+$neutral-2: #000000;
+
+.background-1 {
+    background-color: $clr-1;
+}
+
+.background-2 {
+    background-color: $clr-2;
+}
+
+.background-3 {
+    background-color: $clr-3;
+}
+
+.border-1 {
+    border-color: $clr-1;
+}
+
+.border-2 {
+    border-color: $clr-2;
+}
+
+.border-3 {
+    border-color: $clr-3;
+}

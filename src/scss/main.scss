@@ -1,0 +1,11 @@
+//importing the necessary scss files
+@import './coloring';
+@import './text';
+@import './layout';
+
+.link {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    border-top: 2px black solid;
+}
