@@ -12,7 +12,7 @@ body {
 	max-height: 100vh;
 	height: 100vh;
 	width: 100vw;
-	// overflow: hidden;
+	overflow: hidden;
 }
 
 #root {
@@ -31,7 +31,8 @@ div,
 section,
 aside,
 header,
-nav {
+nav,
+article {
 	display: inline-block;
 	padding: 0;
 	margin: 0;
@@ -50,7 +51,7 @@ nav {
 	padding: 10px;
 	width: 100%;
 	height: 100%;
-	// overflow-y: auto;
+	overflow-y: auto;
 }
 
 .aside {

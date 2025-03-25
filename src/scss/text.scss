@@ -7,13 +7,20 @@ body {
 }
 
 .title {
-    font-size: 1.5em;
+    width: 100%;
+    font-size: 3em;
     font-weight: bold;
 }
 
 .sub-title {
-    font-size: 1.2em;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 2em;
     font-style: italic;
+    padding: 0px 10px 10px 10px;
+    border-left: 3px coloring.$clr-3 solid;
+    border-bottom: 3px coloring.$clr-3 solid;
+    border-radius: 0px 10px;
 }
 
 .heading {

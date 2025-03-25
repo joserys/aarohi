@@ -3,7 +3,8 @@ const Text = ({children, type = 'normal', sizeOverride, boldOverride = false, it
 
     switch(type) {
         case 'title':
-            classToUse = 'Title';
+            classToUse = 'title';
+            break;
         case 'sub-title':
             classToUse = 'sub-title';
             break;
