@@ -4,7 +4,7 @@ import Url from "../modules/url";
 
 const Aside = () => {
 	return (
-		<aside className="aside background-3">
+		<aside className="aside background-1">
 			<Image src="src/assets/imgs/pfp.png" alt="picture of Aarohi Srivastava" />
 			<Text type="heading">Aarohi Srivastava</Text>
             <Text type="sub-heading">Ph.D student in Computer Sciences</Text>

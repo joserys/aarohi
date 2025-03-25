@@ -5,7 +5,7 @@ const Url = ({ children, icon, link = '', external = false, file = false}) => {
 		return (
 			<a className='link width-12' href={link} target={external ? '_blank' : '_self'}>
 				{typeof icon !== 'undefined' ? <FontAwesomeIcon className='width-1 padding-r-5' icon={icon} beat={false} /> : ''}
-				<div className='width-11'>{children}</div>
+				{children}
 			</a>
 		);
 	} else {

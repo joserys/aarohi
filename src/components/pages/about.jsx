@@ -1,33 +1,37 @@
 import Text from "../modules/text";
 import Url from "../modules/url";
+import HeadingDate from "../modules/heading-date";
 
 const About = () => {
 	return (
 		<>
 			<Text type="title">About Me</Text>
 			<Text>
-				Welcome to my website! My name is Aarohi, and I'm a fourth-year Ph.D student in
-				Computer Science at the University of Notre Dame. I work in Dr. David Chiang's
-				<Url link="https://nlp.nd.edu/" external={true}>Natural Language Processing</Url>
-				(NLP) lab. I am passionate about NLP research and applications, particularly related
+				I'm a fourth-year Ph.D student in
+				Computer Science at the University of Notre Dame. I work in Dr. David Chiang's <Url link="https://nlp.nd.edu/" external={true}>Natural Language Processing</Url> (NLP) lab. I am passionate about NLP research and applications, particularly related
 				to language modeling and downstream tasks in low-resource settings. I graduated from
-				Yale University with a B.S. in Computer Science, where I worked in the
-				<Url link="https://clay.yale.edu/" external={true}>computational linguistics</Url>
-				lab. I am originally from Morgantown, West Virginia.
+				Yale University with a B.S. in Computer Science, where I worked in the <Url link="https://clay.yale.edu/" external={true}>computational linguistics</Url> lab. I am originally from Morgantown, West Virginia.
 			</Text>
+
 			<Text type="sub-title">Education</Text>
-			<Text type="sub-heading"></Text>
-			<ul>
+
+			<HeadingDate title="University of Notre Dame, South Bend, IN" date="August 2021 - Present" />
+			<ul className="padding-b-10">
 				<li>Ph.D. Student in Computer Science and Engineering (CSE).</li>
 			</ul>
-			<ul>
+
+			<HeadingDate title="Yale University, New Haven, CT" date="August 2017 - May 2021" />
+			<ul className="padding-b-10">
 				<li>B.S. in Computer Science.</li>
 			</ul>
-			<ul>
+
+			<HeadingDate title="Morgantown High School, Morgantown, WV" date="August 2013 - May 2017" />
+			<ul className="padding-b-10">
 				<li>National Advanced Placement (AP) Scholar.</li>
 			</ul>
+
 			<Text type="sub-title">Research Publications</Text>
-			<ul>
+			<ul className="padding-b-10">
 				<li>Aarohi Srivastava and David Chiang. “We're Calling an Intervention: Exploring the Fundamental Hurdles in Adapting Language Models to Nonstandard Text.” In Proceedings of the Workshop on Noisy and User-Generated Text (2025). <Url link="https://arxiv.org/abs/2404.07304" external={true}>Available here</Url>.</li>
 				<li>Fahim Faisal, Orevaoghene Ahia, Aarohi Srivastava, Kabir Ahuja, David Chiang, Yulia Tsvetkov, and Antonios Anastasopoulos. “DialectBench: An NLP Benchmark for Dialects, Varieties, and Closely-Related Languages.” In Proceedings of the Association for Computational Linguistics (2024). <Url link="https://aclanthology.org/2024.acl-long.777/" external={true}>Available here</Url>. Best Social Impact Paper Award.</li>
 				<li>Aarohi Srivastava and David Chiang. “BERTwich: extending BERT's capabilities to model dialectal and noisy text.” In Findings of the Association for Computational Linguistics: EMNLP (2023). <Url link="https://aclanthology.org/2023.findings-emnlp.1037/" external={true}>Available here</Url>.</li>

@@ -2,32 +2,33 @@
 @forward './coloring';
 
 body {
-    font-size: 16px;
-    color: coloring.$neutral-1;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: coloring.$neutral-1;
 }
 
 .title {
-    width: 100%;
-    font-size: 3em;
-    font-weight: bold;
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .sub-title {
-    width: 100%;
-    margin-top: 10px;
-    font-size: 2em;
-    font-style: italic;
-    padding: 0px 10px 10px 10px;
-    border-left: 3px coloring.$clr-3 solid;
-    border-bottom: 3px coloring.$clr-3 solid;
-    border-radius: 0px 10px;
+  width: 100%;
+  margin: 25px 0 10px 0;
+  font-size: 1.75rem;
+  font-style: italic;
+  padding: 0px 10px 10px 10px;
+  border-left: 2px coloring.$clr-3 solid;
+  border-bottom: 2px coloring.$clr-3 solid;
+  border-radius: 0px 10px;
 }
 
 .heading {
-    font-weight: bold;
+  font-weight: 700;
 }
 
 .sub-heading {
-    font-style: italic;
-    padding-bottom: 10px;
+  font-style: italic;
+  padding-bottom: 10px;
 }

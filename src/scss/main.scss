@@ -1,10 +1,29 @@
 //importing the necessary scss files
 @use "layout";
 
+body {
+	scrollbar-color: layout.$clr-3 layout.$clr-1;
+}
+
 .link {
 	display: flex;
 	padding: 10px;
-	border-top: 2px layout.$neutral-2 solid;
+	color: layout.$clr-2;
+	border-top: 2px layout.$clr-3 solid;
+	font-weight: 700;
+}
+
+.normal-link {
+	color: layout.$clr-2;
+	font-weight: 700;
+}
+
+.link:hover {
+	color: layout.$clr-3
+}
+
+.normal-link:hover {
+	color: layout.$clr-3;
 }
 
 .img-container {
@@ -19,7 +38,7 @@
 	max-height: 250px;
 	width: 100%;
 	height: auto;
-	border: 2px layout.$neutral-2 solid;
+	border: 3px layout.$clr-3 solid;
 	border-radius: 50%;
 	margin: 0 auto;
 	display: block;
@@ -35,23 +54,25 @@
 }
 
 .nav-item {
+	color: layout.$neutral-2;
+	text-decoration: none;
 	height: 100%;
 	margin: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border-radius: 30px;
-    overflow: visible;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	border-radius: 30px;
+	overflow: visible;
 }
 
 .nav-active {
-    background: layout.$clr-3;
-    color: layout.$neutral-2;
+	background: layout.$clr-3;
+	color: layout.$neutral-1;
 }
 
 .nav-item:hover {
-    background: layout.$clr-3;
-    color: layout.$neutral-2;
+	background: layout.$clr-3;
+	color: layout.$neutral-1;
 }
