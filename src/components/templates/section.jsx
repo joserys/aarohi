@@ -8,8 +8,8 @@ const Section = ({hide = false}) => {
 	return (
 		<section className={classes}>
 			<Routes>
-				<Route path="/" element={<About />} />
-				<Route path="/experience" element={<Experience />} />
+				<Route path="/aarohi-portfolio/" element={<About />} />
+				<Route path="/aarohi-portfolio/experience" element={<Experience />} />
 			</Routes>
 		</section>
 	);

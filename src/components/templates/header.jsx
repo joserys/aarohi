@@ -8,7 +8,7 @@ const Header = ({hide = false}) => {
 	return (
 		<header className={classes}>
 			<div className="profile">
-				<Image src="src/assets/imgs/pfp.png" alt="picture of Aarohi Srivastava" />
+				<Image src="./src/assets/imgs/pfp.png" alt="picture of Aarohi Srivastava" />
 				<div className="profile-data">
 					<Text type="heading">Aarohi Srivastava</Text>
 					<Text type="sub-heading">Ph.D student in Computer Sciences</Text>

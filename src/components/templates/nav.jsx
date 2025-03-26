@@ -7,8 +7,8 @@ const Navbar = () => {
 
 	return (
 		<nav className='navbar'>
-				<NavButton title="About Me" url="/" icon="fa-solid fa-contact-card" active={currentPage == '/'}></NavButton>
-				<NavButton title="Experience" url="/Experience" icon="fa-solid fa-suitcase" active={currentPage == '/Experience'}></NavButton>
+				<NavButton title="About Me" url="/aarohi-portfolio/" icon="fa-solid fa-contact-card" active={currentPage == '/aarohi-portfolio/'}></NavButton>
+				<NavButton title="Experience" url="/aarohi-portfolio/experience" icon="fa-solid fa-suitcase" active={currentPage == '/aarohi-portfolio/experience'}></NavButton>
 		</nav>
 	);
 }
