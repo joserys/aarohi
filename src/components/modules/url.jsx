@@ -1,11 +1,12 @@
+import Text from './text';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Url = ({ children, icon, link = '', external = false, file = false}) => {
 	if (typeof icon !== 'undefined') {
 		return (
-			<a className='link width-12' href={link} target={external ? '_blank' : '_self'}>
-				{typeof icon !== 'undefined' ? <FontAwesomeIcon className='width-1 padding-r-5' icon={icon} beat={false} /> : ''}
-				{children}
+			<a className='link' href={link} target={external ? '_blank' : '_self'}>
+				<FontAwesomeIcon className='link-icon' icon={icon} beat={false} />
+				<div className='link-heading'>{children}</div>
 			</a>
 		);
 	} else {

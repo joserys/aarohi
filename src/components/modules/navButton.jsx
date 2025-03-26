@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Text from "./text";
 
 const NavButton = ({ title, url = "/", icon, active = false}) => {
-	const classes = active ? "nav-item nav-active width-2" : "nav-item width-2"
+	const classes = active ? "nav-item nav-active" : "nav-item"
 	return (
 			<Link className={classes} to={url}>
-				{typeof icon !== 'undefined' ? <FontAwesomeIcon className='width-2' icon={icon} beat={false}/> : ''}
-				<Text type="heading">{title}</Text>
+				{typeof icon !== 'undefined' ? <FontAwesomeIcon className='nav-icon' icon={icon} beat={false}/> : ''}
+				<Text type="heading" classOverride='nav-heading'>{title}</Text>
 			</Link>
 	);
 }

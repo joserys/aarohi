@@ -1,0 +1,41 @@
+$clr-1: #FFCDB2;
+$clr-2: #F08080;
+$clr-3: #DFFDFF;
+$neutral-1: #000000;
+$neutral-2: #FFF;
+
+@mixin background-1 {
+	background-color: $clr-1;
+}
+
+@mixin background-2 {
+	background-color: $clr-2;
+}
+
+@mixin background-3 {
+	background-color: $clr-3;
+}
+
+@mixin border-1 {
+	border-color: $clr-1;
+}
+
+@mixin border-2 {
+	border-color: $clr-2;
+}
+
+@mixin border-3 {
+	border-color: $clr-3;
+}
+
+@mixin font-color-1 {
+	color: $neutral-1;
+}
+
+@mixin font-color-2 {
+	color: $neutral-2;
+}
+
+body {
+	color: $neutral-1;
+}

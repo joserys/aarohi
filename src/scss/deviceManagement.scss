@@ -1,0 +1,250 @@
+//import all global Manager Files
+@use './layoutManagement';
+@use './colorManagement';
+@use './textManagement';
+
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default
+body {
+	scrollbar-color: colorManagement.$clr-3 colorManagement.$clr-1;
+}
+
+#root {
+	width: 100%;
+	height: 100%;
+}
+
+ul {
+	padding-bottom: 10px;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	height: 60px;
+	padding: 10px;
+	@include layoutManagement.width-12;
+	@include colorManagement.background-2;
+	overflow: visible;
+}
+
+.nav-item {
+	color: colorManagement.$neutral-2;
+	text-decoration: none;
+	@include layoutManagement.padding-10;
+	margin-right: 5px;
+	display: flex;
+	@include layoutManagement.width-6;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	border-radius: 30px; 
+	border: 2px colorManagement.$clr-3 solid;
+}
+
+.nav-active {
+	background: colorManagement.$clr-3;
+	color: colorManagement.$neutral-1;
+}
+
+.nav-item:hover {
+	background: colorManagement.$clr-3;
+	color: colorManagement.$neutral-1;
+}
+
+.nav-icon {
+	@include layoutManagement.width-2;
+}
+
+.nav-heading {
+	@include layoutManagement.width-10;
+}
+
+.header {
+	align-items: center;
+	justify-content: start;
+	@include layoutManagement.padding-10;
+	@include layoutManagement.width-12;
+	@include colorManagement.background-1;
+}
+
+.profile {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	@include layoutManagement.padding-b-10;
+	@include layoutManagement.width-12;
+}
+
+.image-container {
+	@include layoutManagement.padding-r-10;
+	@include layoutManagement.width-3;
+}
+
+.image {
+	max-width: 250px;
+	max-height: 250px;
+	width: 100%;
+	height: auto;
+	border: 3px colorManagement.$clr-3 solid;
+	border-radius: 50%;
+	margin: 0 auto;
+	float: none;
+}
+
+.profile-data {
+	@include layoutManagement.width-9;
+}
+
+.link {
+	display: flex;
+	@include layoutManagement.width-12;
+	@include layoutManagement.padding-10;
+	color: colorManagement.$clr-2;
+	border-top: 2px colorManagement.$clr-3 solid;
+	font-weight: 700;
+}
+
+.link-icon {
+	@include layoutManagement.width-1;
+	margin-right: 5px;
+}
+
+.link-heading {
+	@include layoutManagement.width-11;
+}
+
+.normal-link {
+	color: colorManagement.$clr-2;
+	font-weight: 700;
+}
+
+.link:hover {
+	color: colorManagement.$clr-3
+}
+
+.normal-link:hover {
+	color: colorManagement.$clr-3;
+}
+
+.main {
+	@include layoutManagement.padding-25;
+	@include colorManagement.background-1;
+}
+
+.allow-scroll {
+	display: block;
+	overflow-y: auto;
+	height: calc(100% - 60px - 60px);
+}
+
+.hide-small {
+	display: none;
+}
+
+.footer {
+	height: 60px;
+	@include layoutManagement.padding-10;
+	@include colorManagement.background-2;
+	@include layoutManagement.center-content;
+}
+
+.center {
+	@include layoutManagement.center-content;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+	#root {
+		@include textManagement.font-size-2;
+	}
+
+	.nav-item {
+		@include layoutManagement.width-4;
+	}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+	#root {
+		@include layoutManagement.grid-design-1;
+	}
+
+	.allow-scroll {
+		overflow: hidden;
+		display: none;
+	}
+
+	.hide-small {
+		display: block
+	}
+
+	.navbar {
+		@include layoutManagement.nav-area;
+	}
+
+	.header {
+		@include layoutManagement.header-area;
+		overflow: auto;
+	}
+
+	.main {
+		@include layoutManagement.main-area;
+		overflow: auto;
+	}
+
+	.footer {
+		@include layoutManagement.footer-area;
+	}
+
+	.nav-item {
+		@include layoutManagement.width-2;
+	}
+
+	.profile {
+		display: block;
+	}
+
+	.image-container {
+		@include layoutManagement.width-12;
+		padding: 10px 0px;
+		display: flex;
+	}
+
+	.image {
+		@include layoutManagement.width-9;
+	}
+
+	.double-heading {
+		display: flex;
+	}
+
+	.left-heading {
+		@include layoutManagement.width-6;
+		@include layoutManagement.lefty;
+	}
+
+	.right-heading {
+		@include layoutManagement.width-6;
+		@include layoutManagement.righty;
+	}
+
+	.center {
+		justify-content: start;
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+	#root {
+		@include textManagement.font-size-3;
+	}
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { }

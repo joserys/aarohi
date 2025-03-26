@@ -10,12 +10,12 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 //importing custom made template components
 import Footer from './components/templates/footer.jsx';
-import Aside from './components/templates/aside.jsx';
 import Header from './components/templates/header.jsx';
+import NavBar from './components/templates/nav.jsx';
 import Section from './components/templates/section.jsx';
 
 //importing custom stylesheet
-import './css/main.css';
+import './css/deviceManagement.css';
 
 //adding the icons to a library for Global Use
 library.add(faLocationDot, faSchool, faEnvelope, faLinkedin, faGithub, faSuitcase, faContactCard);
@@ -24,9 +24,13 @@ library.add(faLocationDot, faSchool, faEnvelope, faLinkedin, faGithub, faSuitcas
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router>
-      <Header />
-      <Section />
-      <Aside />
+      <NavBar />
+      <div className='allow-scroll'>
+        <Header />
+        <Section />
+      </div>
+      <Header hide={true}/>
+      <Section hide={true}/>
       <Footer />
     </Router>
   </StrictMode>

@@ -2,9 +2,9 @@ import Text from "./text";
 
 const HeadingDate = ({title, date}) => {
 	return(
-		<div className="width-12">
-			<Text type="heading" classOverride="width-6 lefty">{title}</Text>
-			<Text type="heading" classOverride="width-6 righty">{date}</Text>
+		<div className="double-heading">
+			<Text type="heading" classOverride="left-heading">{title}</Text>
+			<Text type="heading" classOverride="right-heading">{date}</Text>
 		</div>
 	);
 }

@@ -5,7 +5,7 @@ import HeadingDate from "../modules/heading-date";
 const About = () => {
 	return (
 		<>
-			<Text type="title">About Me</Text>
+			<Text type="title" classOverride="width-12">About Me</Text>
 			<Text>
 				I'm a fourth-year Ph.D student in
 				Computer Science at the University of Notre Dame. I work in Dr. David Chiang's <Url link="https://nlp.nd.edu/" external={true}>Natural Language Processing</Url> (NLP) lab. I am passionate about NLP research and applications, particularly related
@@ -16,22 +16,22 @@ const About = () => {
 			<Text type="sub-title">Education</Text>
 
 			<HeadingDate title="University of Notre Dame, South Bend, IN" date="August 2021 - Present" />
-			<ul className="padding-b-10">
+			<ul>
 				<li>Ph.D. Student in Computer Science and Engineering (CSE).</li>
 			</ul>
 
 			<HeadingDate title="Yale University, New Haven, CT" date="August 2017 - May 2021" />
-			<ul className="padding-b-10">
+			<ul>
 				<li>B.S. in Computer Science.</li>
 			</ul>
 
 			<HeadingDate title="Morgantown High School, Morgantown, WV" date="August 2013 - May 2017" />
-			<ul className="padding-b-10">
+			<ul>
 				<li>National Advanced Placement (AP) Scholar.</li>
 			</ul>
 
 			<Text type="sub-title">Research Publications</Text>
-			<ul className="padding-b-10">
+			<ul>
 				<li>Aarohi Srivastava and David Chiang. “We're Calling an Intervention: Exploring the Fundamental Hurdles in Adapting Language Models to Nonstandard Text.” In Proceedings of the Workshop on Noisy and User-Generated Text (2025). <Url link="https://arxiv.org/abs/2404.07304" external={true}>Available here</Url>.</li>
 				<li>Fahim Faisal, Orevaoghene Ahia, Aarohi Srivastava, Kabir Ahuja, David Chiang, Yulia Tsvetkov, and Antonios Anastasopoulos. “DialectBench: An NLP Benchmark for Dialects, Varieties, and Closely-Related Languages.” In Proceedings of the Association for Computational Linguistics (2024). <Url link="https://aclanthology.org/2024.acl-long.777/" external={true}>Available here</Url>. Best Social Impact Paper Award.</li>
 				<li>Aarohi Srivastava and David Chiang. “BERTwich: extending BERT's capabilities to model dialectal and noisy text.” In Findings of the Association for Computational Linguistics: EMNLP (2023). <Url link="https://aclanthology.org/2023.findings-emnlp.1037/" external={true}>Available here</Url>.</li>
