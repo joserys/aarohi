@@ -44,7 +44,7 @@ const Experience = () => {
 
 				<HeadingDate title="Guest Lecturer for NLP (Notre Dame)" date="Fall 2023" />
 				<ul>
-					<li>Gave three full-length lectures independently to a class of 35.</li>
+					<li>Gave three full-length lectures.</li>
 				</ul>
 
 				<HeadingDate title="Graduate Teaching Assistant for NLP (Notre Dame)" date="Fall 2021, Fall 2023" />
@@ -85,7 +85,7 @@ const Experience = () => {
 
 				<HeadingDate title="Program Chair and Organizer, MSLD 2025" date="November 2024 - Present" />
 				<ul>
-					<li>Served as the program chair for the 2025 Midwest Speech and Language Days (MSLD) conference, and took on organizational duties.</li>
+					<li>Served as the program chair for the 2025 Midwest Speech and Language Days (MSLD) conference and took on additional organizational duties.</li>
 				</ul>
 
 				<HeadingDate title="Member, Programming Committee (VarDial)" date="January 2024 - Present" />
