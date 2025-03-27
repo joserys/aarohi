@@ -12,7 +12,7 @@ const Header = ({hide = false}) => {
 				<Image src={profilePic} alt="picture of Aarohi Srivastava" />
 				<div className="profile-data">
 					<Text type="heading">Aarohi Srivastava</Text>
-					<Text type="sub-heading">Ph.D student in Computer Sciences</Text>
+					<Text type="sub-heading">Ph.D student in Computer Science</Text>
 				</div>
 			</div>
 			<Url icon="fa-solid fa-location-dot" link="https://www.nd.edu/" external={true}>University of Notre Dame</Url>
