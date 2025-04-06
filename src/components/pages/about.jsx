@@ -7,8 +7,8 @@ const About = () => {
 		<>
 			<Text type="title" classOverride="width-12">About Me</Text>
 			<Text>
-				I'm a fourth-year Ph.D student in
-				Computer Science at the University of Notre Dame. I work in Dr. David Chiang's <Url link="https://nlp.nd.edu/" external={true}>Natural Language Processing</Url> (NLP) lab. I am passionate about NLP research and applications, particularly related
+				I'm a fourth-year Ph.D candidate in
+				computer science at the University of Notre Dame. I work in Dr. David Chiang's <Url link="https://nlp.nd.edu/" external={true}>Natural Language Processing</Url> (NLP) lab. I am passionate about NLP research and applications, particularly related
 				to language modeling and downstream tasks in low-resource settings. I graduated from
 				Yale University with a B.S. in Computer Science, where I worked in the <Url link="https://clay.yale.edu/" external={true}>computational linguistics</Url> lab. I am originally from Morgantown, West Virginia.
 			</Text>
