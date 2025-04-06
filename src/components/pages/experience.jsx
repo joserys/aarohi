@@ -135,7 +135,7 @@ const Experience = () => {
 					<li>Volunteer at St. Margaret’s House for women and children.</li>
 				</ul>
 
-				<HeadingDate title="President and Volunteer Teaching Assistant, SheCode (Yale University)" date="Spring 2018 - Spring 2021" />
+				<HeadingDate title="President and Volunteer Teaching Assistant, SheCode (Yale)" date="Spring 2018 - Spring 2021" />
 				<ul>
 					<li>Taught computer science principles to middle and high school girls.</li>
 					<li>Organized sessions, recruited volunteers, communicated with the community/school liaison, and
@@ -158,14 +158,14 @@ const Experience = () => {
 					<li>Presented my project to the top executives at the end of the internship.</li>
 				</ul>
 
-				<HeadingDate title="Student Coder, Linguistics Department (Yale University)" date="Summer 2019" />
+				<HeadingDate title="Student Coder, Linguistics Department (Yale)" date="Summer 2019" />
 				<ul>
 					<li>Work acknowledged in the following publication: Kotek, Hadas, et al. &ldquo;Gender representation in linguistic example sentences.&rdquo;
 						<em>Proceedings of the Linguistic Society of America</em> 5.1 (2020): 514-528. <Url file={true} link="https://journals.linguisticsociety.org/proceedings/index.php/PLSA/article/download/4723/4342">Available here</Url>.
 					</li>
 				</ul>
 
-				<HeadingDate title="STEM Representative, Office of Undergraduate Admissions (Yale University)" date="Spring 2018, Spring 2019" />
+				<HeadingDate title="STEM Representative, Office of Undergraduate Admissions (Yale)" date="Spring 2018, Spring 2019" />
 				<ul>
 					<li>Representative for STEM at Yale with the Office of Undergraduate Admissions.</li>
 				</ul>

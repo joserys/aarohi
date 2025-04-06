@@ -168,37 +168,6 @@ ul {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-	#root {
-		@include layoutManagement.grid-design-1;
-	}
-
-	.allow-scroll {
-		overflow: hidden;
-		display: none;
-	}
-
-	.hide-small {
-		display: block
-	}
-
-	.navbar {
-		@include layoutManagement.nav-area;
-	}
-
-	.header {
-		@include layoutManagement.header-area;
-		overflow: auto;
-	}
-
-	.main {
-		@include layoutManagement.main-area;
-		overflow: auto;
-	}
-
-	.footer {
-		@include layoutManagement.footer-area;
-	}
-
 	.nav-item {
 		@include layoutManagement.width-2;
 	}
@@ -222,12 +191,12 @@ ul {
 	}
 
 	.left-heading {
-		@include layoutManagement.width-6;
+		@include layoutManagement.width-9;
 		@include layoutManagement.lefty;
 	}
 
 	.right-heading {
-		@include layoutManagement.width-6;
+		@include layoutManagement.width-3;
 		@include layoutManagement.righty;
 	}
 
@@ -237,7 +206,38 @@ ul {
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
+	#root {
+		@include layoutManagement.grid-design-1;
+	}
+
+	.navbar {
+		@include layoutManagement.nav-area;
+	}
+
+	.header {
+		@include layoutManagement.header-area;
+		overflow: auto;
+	}
+
+	.main {
+		@include layoutManagement.main-area;
+		overflow: auto;
+	}
+
+	.footer {
+		@include layoutManagement.footer-area;
+	}
+
+	.allow-scroll {
+		overflow: hidden;
+		display: none;
+	}
+
+	.hide-small {
+		display: block
+	}
+
 	#root {
 		@include textManagement.font-size-3;
 	}
