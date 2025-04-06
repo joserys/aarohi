@@ -1,8 +1,8 @@
-const Image = ({ src = '', alt = '', width = 4}) => {
+const Image = ({ view = '', download, downloadAs='image', alt = ''}) => {
 	return (
-		<div className="image-container">
-			<img src={src} slt={alt} className="image"></img>
-		</div>
+		<a href={typeof download !== 'undefined' ? download : view} download={downloadAs} className="image-container">
+			<img src={view} slt={alt} className="image"></img>
+		</a>
 	);
 }
 
