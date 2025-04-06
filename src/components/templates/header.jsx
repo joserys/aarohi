@@ -13,7 +13,7 @@ const Header = ({hide = false}) => {
 				<Image view={smallProfilePic} download={largeProfilePic} downloadAs="Aarohi_Srivastava_Profile.png" alt="Image of Aarohi Srivastava" />
 				<div className="profile-data">
 					<Text type="heading">Aarohi Srivastava</Text>
-					<Text type="sub-heading">Ph.D Candidate in Computer Science</Text>
+					<Text type="sub-heading">Ph.D. Candidate in Computer Science</Text>
 				</div>
 			</div>
 			<Url icon="fa-solid fa-location-dot" link="https://www.nd.edu/" external={true}>University of Notre Dame</Url>

@@ -26,7 +26,7 @@ const Experience = () => {
 
 				<HeadingDate title="Student Researcher (YGDP @ Yale)" date="May 2020 - July 2020" />
 				<ul>
-					<li>Student researcher for the Yale Grammatical Diversity Project under Dr. Raffaella Zanuttine.</li>
+					<li>Student researcher for the Yale Grammatical Diversity Project under Dr. Raffaella Zanuttini.</li>
 					<li>Conducted research on dialects in American English, particularly related to hedging and interlocutor
 						perception of microsyntactic variation.</li>
 				</ul>
@@ -47,7 +47,7 @@ const Experience = () => {
 					<li>Sole instructor for CSE 40657.</li>
 				</ul>
 
-				<HeadingDate title="Outstanding Graduate Student Teacher Award (Notre Dame)" date="Fall 2023" />
+				<HeadingDate title="Outstanding Graduate Student Teacher Award (Notre Dame)" date="March 2024" />
 				<ul>
 					<li>Awarded for Natural Language Processing (Fall 2023) by the Kaneb Center for Teaching Excellence.</li>
 				</ul>
@@ -93,14 +93,14 @@ const Experience = () => {
 			<article>
 				<Text type="sub-title">Service and Outreach</Text>
 
-				<HeadingDate title="Graduate Student Representative, CSE Committee on Inclusive Excellence and Engagement (Notre Dame)" date="September 2024 - Present" />
-				<ul>
-					<li>Organized activities to improve CSE graduate students’ engagement and sense of belonging.</li>
-				</ul>
-
 				<HeadingDate title="Program Chair and Organizer, MSLD 2025" date="November 2024 - April 2025" />
 				<ul>
 					<li>Served as the program chair for the 2025 Midwest Speech and Language Days (MSLD) conference and took on additional organizational duties.</li>
+				</ul>
+
+				<HeadingDate title="Graduate Student Representative, CSE Committee on Inclusive Excellence and Engagement (Notre Dame)" date="September 2024 - Present" />
+				<ul>
+					<li>Organized activities to improve CSE graduate students’ engagement and sense of belonging.</li>
 				</ul>
 
 				<HeadingDate title="Member, Programming Committee (VarDial)" date="January 2024 - Present" />
