@@ -1,7 +1,7 @@
 @mixin grid-design-1 {
 	display: grid;
-	grid-template-columns: calc(100% - 350px) 350px;
-	grid-template-rows: 60px calc(100% - 120px) 60px;
+	grid-template-columns: calc(100% - 315px) 315px;
+	grid-template-rows: 52px calc(100% - 104px) 52px;
 	grid-template-areas:
 		"nav nav"
 		"main header"

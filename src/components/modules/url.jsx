@@ -1,5 +1,5 @@
 import Text from './text';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Url = ({ children, icon, link = '', external = false, file = false}) => {
 	if (typeof icon !== 'undefined') {

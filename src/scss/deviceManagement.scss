@@ -15,15 +15,15 @@ body {
 }
 
 ul {
-	padding-bottom: 10px;
+	padding-bottom: 9px;
 }
 
 .navbar {
 	display: flex;
 	align-items: center;
 	justify-content: start;
-	height: 60px;
-	padding: 10px;
+	height: 52px;
+	padding: 9px;
 	@include layoutManagement.width-12;
 	@include colorManagement.background-2;
 	overflow: visible;
@@ -33,15 +33,15 @@ ul {
 	color: colorManagement.$neutral-2;
 	text-decoration: none;
 	@include layoutManagement.padding-10;
-	margin-right: 5px;
+	margin-right: 4px;
 	display: flex;
 	@include layoutManagement.width-6;
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
 	transition: all 0.3s ease;
-	border-radius: 30px; 
-	border: 2px colorManagement.$clr-3 solid;
+	border-radius: 25px; 
+	border: 1.5px colorManagement.$clr-3 solid;
 }
 
 .nav-active {
@@ -84,11 +84,11 @@ ul {
 }
 
 .image {
-	max-width: 250px;
-	max-height: 250px;
+	max-width: 225px;
+	max-height: 225px;
 	width: 100%;
 	height: auto;
-	border: 3px colorManagement.$clr-3 solid;
+	border: 2px colorManagement.$clr-3 solid;
 	border-radius: 50%;
 	margin: 0 auto;
 	float: none;
@@ -98,18 +98,36 @@ ul {
 	@include layoutManagement.width-9;
 }
 
+.label-container {
+	@include layoutManagement.center-content-y;
+	@include layoutManagement.width-3;
+	@include layoutManagement.padding-5;
+	background-color: rgba(240, 128, 128, .5);
+	border-radius: 10px;
+}
+
+.award-icon {
+	color: #FFD700;
+	@include layoutManagement.width-1;
+	margin-right: 5px;
+}
+
+.label-title {
+	@include layoutManagement.width-11;
+}
+
 .link {
 	display: flex;
 	@include layoutManagement.width-12;
 	@include layoutManagement.padding-10;
 	color: colorManagement.$clr-2;
-	border-top: 2px colorManagement.$clr-3 solid;
+	border-top: 1.5px colorManagement.$clr-3 solid;
 	font-weight: 700;
 }
 
 .link-icon {
 	@include layoutManagement.width-1;
-	margin-right: 5px;
+	margin-right: 4px;
 }
 
 .link-heading {
@@ -137,7 +155,7 @@ ul {
 .allow-scroll {
 	display: block;
 	overflow-y: auto;
-	height: calc(100% - 60px - 60px);
+	height: calc(100% - 52px - 52px);
 }
 
 .hide-small {
@@ -145,7 +163,7 @@ ul {
 }
 
 .footer {
-	height: 60px;
+	height: 52px;
 	@include layoutManagement.padding-10;
 	@include colorManagement.background-2;
 	@include layoutManagement.center-content;
@@ -168,17 +186,47 @@ ul {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+	.nav-item {
+		@include layoutManagement.width-2;
+	}
+
+	.profile {
+		display: block;
+	}
+
+	.image-container {
+		@include layoutManagement.width-12;
+		padding: 9px 0px;
+		display: flex;
+	}
+
+	.image {
+		@include layoutManagement.width-9;
+	}
+
+	.double-heading {
+		display: flex;
+	}
+
+	.left-heading {
+		@include layoutManagement.width-9;
+		@include layoutManagement.lefty;
+	}
+
+	.right-heading {
+		@include layoutManagement.width-3;
+		@include layoutManagement.righty;
+	}
+
+	.center {
+		justify-content: start;
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
 	#root {
 		@include layoutManagement.grid-design-1;
-	}
-
-	.allow-scroll {
-		overflow: hidden;
-		display: none;
-	}
-
-	.hide-small {
-		display: block
 	}
 
 	.navbar {
@@ -199,45 +247,15 @@ ul {
 		@include layoutManagement.footer-area;
 	}
 
-	.nav-item {
-		@include layoutManagement.width-2;
+	.allow-scroll {
+		overflow: hidden;
+		display: none;
 	}
 
-	.profile {
-		display: block;
+	.hide-small {
+		display: block
 	}
 
-	.image-container {
-		@include layoutManagement.width-12;
-		padding: 10px 0px;
-		display: flex;
-	}
-
-	.image {
-		@include layoutManagement.width-9;
-	}
-
-	.double-heading {
-		display: flex;
-	}
-
-	.left-heading {
-		@include layoutManagement.width-6;
-		@include layoutManagement.lefty;
-	}
-
-	.right-heading {
-		@include layoutManagement.width-6;
-		@include layoutManagement.righty;
-	}
-
-	.center {
-		justify-content: start;
-	}
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
 	#root {
 		@include textManagement.font-size-3;
 	}
