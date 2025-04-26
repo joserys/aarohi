@@ -98,6 +98,24 @@ ul {
 	@include layoutManagement.width-9;
 }
 
+.label-container {
+	@include layoutManagement.center-content-y;
+	@include layoutManagement.width-3;
+	@include layoutManagement.padding-5;
+	background-color: rgba(240, 128, 128, .5);
+	border-radius: 10px;
+}
+
+.award-icon {
+	color: #FFD700;
+	@include layoutManagement.width-1;
+	margin-right: 5px;
+}
+
+.label-title {
+	@include layoutManagement.width-11;
+}
+
 .link {
 	display: flex;
 	@include layoutManagement.width-12;
